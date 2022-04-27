@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "@mdi/font": "^6.6.96",
+    "@nuxtjs/vuetify": "^1.12.3",
     "@types/gsap": "^3.0.0",
     "@types/three": "^0.139.0",
     "pug": "^3.0.2",

@@ -22,8 +22,10 @@
             <Portfolio @itemPop="qw"/>
           </div>
           <div  :class="{'fade' : isFade}" class="box">
-            <Counter/>
+            <Counter :page="true"/>
+            <Design/>
           </div>
+          <Footer/>
         </div>
       </div>
       <div :class="{'popup' : isPop}">
@@ -45,12 +47,16 @@
 import Splitter from 'split-html-to-chars'
 import Serviced from '~/components/Serviced'
 import Portfolio from '~/components/Portfolio'
+import Design from '~/components/Design'
 import Counter from '~/components/Counter'
+import Footer from '~/components/system/footer'
 export default {
   components: {
     Serviced,
     Portfolio,
-    Counter
+    Design,
+    Counter,
+    Footer
   },
   data(){
     return{

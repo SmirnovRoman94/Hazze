@@ -28,7 +28,8 @@ export default {
   plugins: [
     { src:'plugins/seq.js', mode: 'client'},
     { src: 'plugins/aos.js', mode: 'client'},
-    { src: 'plugins/icons.js'}
+    { src: 'plugins/icons.js'},
+    { src: 'plugins/vuetify.js'}
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -36,6 +37,7 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxtjs/vuetify'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules

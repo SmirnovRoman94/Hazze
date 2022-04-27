@@ -26,12 +26,12 @@ export default {
                 {
                     id: 1,
                     selector: 'one',
-                    url: require('~/assets/img/portfolio/blog-1.jpg')
+                    url: require('~/assets/img/portfolio/gallery-2.jpg')
                 },
                 {
                     id: 2,
                     selector: 'two',
-                    url: require('~/assets/img/portfolio/blog-2.jpg')
+                    url: require('~/assets/img/portfolio/gallery-5.jpg')
                 },
                 {
                     id: 3,
@@ -54,7 +54,6 @@ export default {
     methods: {
         changerPop(item){
             this.$emit('itemPop', item)
-            // console.log(item)
         }
     }
 }

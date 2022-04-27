@@ -4,30 +4,43 @@
       <video autoplay muted loop>
           <source src="~/assets/img/qwery.mp4" type="video/mp4"/>
       </video>
-      <div class="about_page">
-        <h1 class="head">about page</h1>
-        <p>dgxdijgslkgjsdlfgj</p>
+      <div class="container">
+          <div class="about_page">
+              <div class="about_counter">
+                    <Counter/>
+                </div>
+                <div class="about_blog">
+                    <BlogList/>
+                </div>
+                <Footer/>
+          </div>
       </div>
     </div>
 </div>
 </template>
 
 <script>
+import Counter from '~/components/Counter'
+import BlogList from '~/components/BlogList'
+import Footer from '~/components/system/footer'
 export default {
     transitions: {
         name: 'flip'
+  },
+  components: {
+      Counter,
+      BlogList,
+      Footer
   }
 }
 </script>
 
 <style lang="scss" scoped>
 .about_page{
-  width: 100vw;
   color: #fff;
-  position: absolute;
-  height: 100%;
-  color: #f1f1f1;
-  z-index: 100;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
   .head{
       display: flex;
       justify-content: center;
@@ -36,7 +49,6 @@ export default {
       padding-top: 200px;
   }
 }
-
 #video-bg {
     position: fixed;
     top: 0;
@@ -66,5 +78,11 @@ export default {
          height: 100%;
          object-fit: cover;
      }
+ }
+ .about_counter{
+     margin-top: 15%;
+ }
+ .about_blog{
+     margin-top: 5%;
  }
 </style>
